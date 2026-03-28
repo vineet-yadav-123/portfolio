@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #020617, #0f172a);
+  color: white;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10%;
+  position: sticky;
+  top: 0;
+  background: rgba(2,6,23,0.8);
+  backdrop-filter: blur(10px);
+}
+
+nav a {
+  margin-left: 20px;
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 10%;
+  flex-wrap: wrap;
+}
+
+.hero-text h1 {
+  font-size: 45px;
+}
+
+.hero-text span {
+  color: #38bdf8;
+}
+
+.hero-img img {
+  width: 250px;
+  border-radius: 50%;
+  border: 5px solid #38bdf8;
+}
+
+/* SECTIONS */
+section {
+  padding: 60px 10%;
+}
+
+h2 {
+  color: #38bdf8;
+}
+
+/* SKILLS */
+.skills-container {
+  display: grid;
+  gap: 20px;
+}
+
+.skill-box {
+  background: rgba(30,41,59,0.6);
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.progress {
+  height: 10px;
+  background: #1e293b;
+  border-radius: 10px;
+}
+
+.progress div {
+  height: 100%;
+  background: linear-gradient(90deg,#38bdf8,#0ea5e9);
+}
+
+/* PROJECTS */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+  gap: 25px;
+}
+
+.card {
+  background: rgba(30,41,59,0.6);
+  padding: 25px;
+  border-radius: 15px;
+  transition: 0.4s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* FADE ANIMATION */
+.fade {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.8s;
+}
+
+.fade.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .hero{
+    flex-direction:column;
+    text-align:center;
+  }
+}
