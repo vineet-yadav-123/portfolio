@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
@@ -14,12 +18,17 @@ body {
   top: 0;
   background: rgba(2,6,23,0.8);
   backdrop-filter: blur(10px);
+  z-index: 1000;
 }
 
 nav a {
   margin-left: 20px;
   color: #38bdf8;
   text-decoration: none;
+}
+
+nav a:hover {
+  color: white;
 }
 
 /* HERO */
@@ -47,6 +56,7 @@ nav a {
 /* SECTIONS */
 section {
   padding: 60px 10%;
+  scroll-margin-top: 100px;
 }
 
 h2 {
